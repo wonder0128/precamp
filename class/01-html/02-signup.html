@@ -2,29 +2,49 @@
 <html lang="ko">
 <head>
   <title>회원가입</title>
+  <link rel="stylesheet" href="./02-signup.css">
 </head>
 <body>
-  <h2>회원가입</h2>
-  <input type="text" placeholder="이메일을 입력해 주세요."><br><br>
-  <input type="text" placeholder="이름을 임력해 주세요."><br><br>
-  <input type="password" placeholder="비밀번호를 입력해 주세요."><br><br>
-  <input type="password" placeholder="비밀번호를 다시 입력해 주세요."><br><br>
+  <div class="signUpContent">
+    <h2>
+      회원 가입을 위해<br>
+      정보를 입력해주세요
+    </h2>
+    
+    <label for="email" class="label text">* 이메일</label>
+    <input id="email" class="input_text" type="text">
 
-  <select>
-    <option disabled selected>지역을 선택하세요</option>
-    <option value="서울">서울</option>
-    <option value="경기">경기</option>
-    <option value="인천">인천</option>
-  </select>
-  <br><br>
+    <label for="name" class="label text">* 이름</label>
+    <input id="name" class="input_text" type="text">
 
-  <input type="radio" name="gender">여성
-  <input type="radio" name="gender">남성
-  <br><br>
+    <label for="password" class="label text">* 비밀번호</label>
+    <input id="password" class="input_text" type="password">
 
-  <input type="checkbox">이용약관 어쩌구에 동의합니다.
-  <hr>
-  <button>가입하기</button>
-  <!-- <input type="button" value="가입하기"> -->
+    <label for="password_chk" class="label text">* 비밀번호 확인</label>
+    <input id="password_chk" class="input_text" type="password">
+  
+    <div class="signUpChk">
+      <input id="gender_w" class="input_radio" type="radio" name="gender">
+      <label for="gender_w" class="label gender">여성</label>
+      <input id="gender_m" class="input_radio" type="radio" name="gender">
+      <label for="gender_m" class="label gender">남성</label>
+    </div>
+
+    <div class="agreeChk">
+      <input type="checkbox" id="input_chk">
+      <span class="agree_text">
+        이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.
+      </span>
+    </div>
+    
+    <div class="out-line">
+      <div class="line"></div>
+    </div>
+
+    <button>
+      <span>가입하기</span>
+    </button>
+  </di>
+  
 </body>
 </html>
