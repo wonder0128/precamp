@@ -79,21 +79,36 @@ html, body{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+}
+th {
+  border-color: #999;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 3px 0;
+}
+td {
+  border-color: #999;
+  border-bottom: 1px dashed;
+  color: #0F465E;
+  padding: 3px 0;
 }
 .table__header{
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   font-size: 10px;
   font-weight: 700;
   color: #999;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  background-color: #EEE;
 }
+
 .table__body{
   width: 100%;
   font-size: 10px;
   font-weight: 700;
 }
+.header__title, .header__singer, .music__title, .music__singer {
+  text-align: left;
+}
+
+
