@@ -4,6 +4,7 @@
   <title>홍길동님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
   <link rel="stylesheet" href="./styles/index.css">
   <script src="https://kit.fontawesome.com/bd5bf434ff.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </head>
 <body>
   <div class="background">
@@ -68,8 +69,13 @@
           </div>
 
           <div class="wrapper__right__body">
-            <iframe src="./jukebox.html" frameborder="0"></iframe>
+            <iframe id="contentFrame" src="./home.html" frameborder="0"></iframe>
           </div>
+        </div>
+        <div class="navigation">
+          <div class="navigation__item" id="menuHome" onclick="menuHome()">홈</div>
+          <div class="navigation__item" id="menuJukebox" onclick="menuJukebox()">주크박스</div>
+          <div class="navigation__item" id="menuGame" onclick="menuGame()">게임</div>
         </div>
       </div>
     </div>

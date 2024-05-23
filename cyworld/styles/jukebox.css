@@ -107,7 +107,7 @@ td {
   font-size: 10px;
   font-weight: 700;
 }
-.header__title, .header__singer, .music__title, .music__singer {
+.header__title, .music__title{
   text-align: left;
 }
 
