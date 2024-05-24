@@ -22,19 +22,19 @@
         <input type="text" id="pw2" placeholder="비밀번호를 다시 입력해 주세요.">
         <span class="errorMsg pw2">비밀번호를 입력해주세요.</span>
       </div>
-      <div class="wrapper__phone">
-        <input type="text" id="num1"> -
-        <input type="text" id="num2"> -
-        <input type="text" id="num3">
+      <div class="wrapper__phone" oninput="phone()">
+        <input type="text" id="num1" maxlength="3"> -
+        <input type="text" id="num2" maxlength="4"> -
+        <input type="text" id="num3" maxlength="4">
       </div>
       <div class="wrapper__certification">
         <div class="cert__number">
           <span id="certNum">000000</span>
-          <button class="chkBtn">인증번호 전송</button>
+          <button class="chkBtn" disabled="true">인증번호 전송</button>
         </div>
         <div class="cert__time">
           <span id="certTimer">3:00</span>
-          <button class="chkBtn active" disabled="false">인증완료</button>
+          <button class="chkBtn" disabled="true">인증완료</button>
         </div>
       </div>
       <div class="wrapper__select">
@@ -60,6 +60,7 @@
     </div>
     <div class="divideLine"></div>
     <div class="wrapper__check">
+      <!-- <button class="submit" disabled="true">가입하기</button> -->
       <button class="submit">가입하기</button>
     </div>
   </div>
